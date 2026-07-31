@@ -482,7 +482,7 @@ document.write(`
 </ul>
 <div class="tip admonition" id="example-6">
 <p class="admonition-title">Example 6</p>
-<p>As an example consider the program in Figure <a class="reference internal" href="#f-2-4"><span class="std std-ref">2.4</span></a>. The domains of this program are calculated by looking at the different paths in the program. In this example, there are two if/then/else statement, which gives us four possible paths. Table <a class="reference internal" href="#t-2-1"><span class="std std-ref">2.1</span></a> outlines the four path conditions for each path, which correspond to the predicate in the branches.</p>
+<p>As an example consider the program in Figure <a class="reference internal" href="#f-2-4"><span class="std std-ref">2.4</span></a>. The domains of this program are calculated by looking at the different paths in the program. In this example, there are two if/then/else statement, which gives us four possible paths. Table <a class="reference internal" href="#t-2-1"><span class="std std-ref">2.1</span></a> outlines the four path conditions, which correspond to the predicates in the branches.</p>
 <div class="highlight-c notranslate" id="f-2-4"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">w</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">;</span>
@@ -513,10 +513,10 @@ Figure 2.4: A small (non-sensical) program to illustrate the idea of domains.
 <p>Considering that a domain is the set of inputs that satisfy a path condition, then four path conditions gives us four domains. Each domain is defined by a <em>linear border</em>. These are shown Figure <a class="reference internal" href="#f-2-5"><span class="std std-ref">2.5</span></a>. In this figure, TT refers to the domain in which both branches in the program evaluate to true. TF, TF, and FF are defined similarly to other possible evaluations.</p>
 <div class="math notranslate nohighlight" id="t-2-1">
 \[\begin{split}\begin{array}{lll}
- \textrm{C1a}  &amp;  &amp; x + y \geq 2\\
- \textrm{C1b}  &amp;  &amp; x + y &lt; 2\\
- \textrm{C2a}  &amp; (C1 T) &amp; 2x - 2y &gt; 3\\
- \textrm{C2b}  &amp; (C1 F) &amp; 3x - 4y &gt; 3  
+ \textrm{Path 1}  &amp;  &amp; (x + y &ge; 2) &and; (2x - 2y &gt; 3)\\
+ \textrm{Path 2}  &amp;  &amp; (x + y &ge; 2) &and; (2x - 2y &le; 3)\\
+ \textrm{Path 3}  &amp;  &amp; (x + y &lt; 2) &and; (3x - 4y &gt; 3)\\
+ \textrm{Path 4}  &amp;  &amp; (x + y &lt; 2) &and; (3x - 4y &le; 3)  
 \end{array}
 \end{split}\]</div>
 <center>
