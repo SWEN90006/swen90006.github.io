@@ -531,7 +531,7 @@ Figure 2.5: The four domains from the program.
 </center>
 <div class="admonition-remark admonition">
 <p class="admonition-title">Remark</p>
-<p>Domain testing assumes that the control-flow decisions partition the input space using linear predicates. Consequently, the boundaries between input domains are hyperplanes (straight lines in 2D, planes in 3D, and hyperplanes in higher dimensions).</p>
+<p>Classical domain testing assumes that the control-flow decisions partition the input space using linear predicates. Consequently, the boundaries between input domains are hyperplanes (straight lines in 2D, planes in 3D, and hyperplanes in higher dimensions).</p>
 </div>
 <p>Linear equalities are expressions that can be put into the form</p>
 <div class="math notranslate nohighlight">
@@ -548,6 +548,7 @@ Figure 2.5: The four domains from the program.
 <div class="math notranslate nohighlight">
 \[ a_1 x_1{}^y + \ldots + a_n x_n \leq k\]</div>
 </div>
+<p>In a later chapter, you will learn about symbolic execution, which can be viewed as an automated form of domain exploration. Instead of reasoning geometrically about input domains, it reasons over path constraints and can automatically analyse many nonlinear predicates.</p>
 <section id="compound-predicates">
 <h3><span class="section-number">2.5.1. </span>Compound Predicates<a class="headerlink" href="#compound-predicates" title="Permalink to this heading">#</a></h3>
 <p>Simple predicates contain just a set of variables and a relational operator such as <span class="math notranslate nohighlight">\(\leq\)</span>, <span class="math notranslate nohighlight">\(\geq\)</span>, <span class="math notranslate nohighlight">\(&gt;\)</span>, <span class="math notranslate nohighlight">\(&lt;\)</span>, <span class="math notranslate nohighlight">\(=\)</span> or <span class="math notranslate nohighlight">\(\neq\)</span>. Simple predicates create <em>simple boundaries</em>. When we use <em>compound predicates</em> to define boundaries then the situation becomes trickier to test. A compound predicate with a logical conjunction (<strong>AND</strong> operator) is straight-forward because it often defines a convex domain where all of the points lie within a boundary. A compound predicate with a logical disjunction (<strong>OR</strong> operator) can create disjointed boundaries, for example, <span class="math notranslate nohighlight">\(x\leq 0 \lor x \geq 2\)</span> creates the boundaries as in Figure <a class="reference internal" href="#f-2-6"><span class="std std-ref">2.6</span></a>, which is non-convex and has "holes".</p>
