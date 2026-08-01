@@ -708,11 +708,11 @@ Figure 2.7: Overlapping equivalence classes on an input domain.
 </center>
 <p>Returning to our example of a binary search function, we may identify the following equivalence classes (in fact, we should identify even more):</p>
 <ul class="simple">
-<li><p>an empty list;</p></li>
-<li><p>a list with exactly one element;</p></li>
-<li><p>a list with at least two elements;</p></li>
-<li><p>a sorted list; and</p></li>
-<li><p>a unsorted list (an invalid input).</p></li>
+<li><p>(A) an empty list;</p></li>
+<li><p>(B) a list with exactly one element;</p></li>
+<li><p>(C) a list with at least two elements;</p></li>
+<li><p>(D) a sorted list; and</p></li>
+<li><p>(E) a unsorted list (an invalid input).</p></li>
 </ul>
 <p>Equivalence classes A, B, and C are disjoint, as are D and E. However, a list with at least two elements can both sorted or unsorted, so there is overlap between classes C and D, as well as C and E.</p>
 <p>Once these overlapping classes has been identified, they are eliminated by treating them as equivalence classes themselves. So, for the equivalence classes in Figure <a class="reference internal" href="#f-2-7"><span class="std std-ref">2.7</span></a>, the overlapping class becomes an equivalence class of its own, and the other two equivalence classes are re-calculated by removing the values in the overlapping class.</p>
