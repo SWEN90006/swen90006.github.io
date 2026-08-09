@@ -937,7 +937,7 @@ Every execution <em>path</em> of the program should be exercised at least once.<
 <h2><span class="section-number">4.4. </span>Data-Flow Testing<a class="headerlink" href="#data-flow-testing" title="Permalink to this heading">#</a></h2>
 <p>It is hard to do better to motivate data-flow testing than that given by Rapps and Wuyeker:</p>
 <blockquote>
-<div><p><em>It is our belief that, just as one would not feel confident about a &gt; program without executing every statement in it as part of some test, &gt; one should not feel confident about a program without having seen the &gt; effect of using the value produced by each and every computation.</em></p>
+<div><p><em>It is our belief that, just as one would not feel confident about a program without executing every statement in it as part of some test, one should not feel confident about a program without having seen the effect of using the value produced by each and every computation.</em></p>
 </div></blockquote>
 <p>Despite the analyses of input and output domains used in equivalence partitioning, boundary-value analysis, and control-flow graphs, testing still relies on personal experience to choose test cases that will uncover program faults. The problem is made harder if a programs has a large number of input variables. For example, if a program with 5 input variables and each variable’s input domain is partitioned into 5 equivalence classes then there are <span class="math notranslate nohighlight">\(\rm 5^5 = 3125\)</span> possible combinations to test.</p>
 <p><em>How can we select better test cases in order to increase the power of each test case</em>?</p>
