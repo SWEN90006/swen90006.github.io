@@ -1154,7 +1154,7 @@ Every execution <em>path</em> of the program should be exercised at least once.<
 <figure class="align-center">
 <a class="reference internal image-reference" href="_images/All-Defs-Example.png"><img alt="_images/All-Defs-Example.png" src="_images/All-Defs-Example.png" style="width: 50%;" /></a>
 </figure>
-<p>For a test suite to satisfy that All-Defs criteria, we would need to test at least one path from the single definition of x, to at least one use. A single test case is sufficient for this. The paths 1, 2, 4, 6 or the path 1, 3, 4, 5 would be satisfactory.</p>
+<p>For a test suite to satisfy that All-Defs criteria, we would need to test at least one path from the single definition of x, to at least one use. A single test case is sufficient for this. The paths 1, 2, 4, 6 or the path 1, 3, 4, 6 would be satisfactory.</p>
 </li>
 <li><p><strong>All-Uses</strong> — The All-Uses criteria requires some definition-clear sub-path from <em>all definitions</em> of a variable to <em>all uses</em> reached by that definition. For example, consider the following data-flow graph:</p>
 <figure class="align-center">
