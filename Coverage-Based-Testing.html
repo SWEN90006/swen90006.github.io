@@ -491,7 +491,7 @@ document.write(`
 <li><p><code class="docutils literal notranslate"><span class="pre">b</span></code>  evaluates to true at least once and false at least once.</p></li>
 </ul>
 </li>
-<li><p><strong>Decision/Condition coverage</strong>:  Each condition in a branch is made to evaluate to both true and false and each branch is made to evaluate to both true and false. That is, a combination of branch coverage and condition coverage. For example, in the branch <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">a</span> <span class="pre">and</span> <span class="pre">b</span></code>, where <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> are both conditions, we must execute a set of tests such that:</p>
+<li><p><strong>Decision/Condition coverage</strong>:  Each condition in a branch is made to evaluate to both true and false and each branch is made to evaluate to both true and false. That is, a combination of branch coverage and condition coverage. For example, in the branch <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">(a</span> <span class="pre">and</span> <span class="pre">b)</span></code>, where <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> are both conditions, we must execute a set of tests such that:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">a</span></code>  evaluates to true  at least once and false at least once;</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">b</span></code>  evaluates to true at least once and false at least once; and</p></li>
@@ -551,7 +551,7 @@ All possible combinations of condition outcomes within each branch should be exe
 </li>
 <li><p><strong>Path coverage</strong>:
 Every execution <em>path</em> of the program should be exercised at least once.</p>
-<p><strong>Note</strong> that path coverage is impossible for graphs containing loops, because there are an infinite number of paths. A typical work around is to apply the <em>zero-to-many</em> rule, discussed in the <a class="reference internal" href="Input-Partitioning.html#domain-testing"><span class="std std-ref">Domain Testing</span></a> section, which states that the minimum number of times a loop can execute is zero, so this is a boundary condition. Similarly, some loops have an upper bound, so treat this as a boundary.</p>
+<p><strong>Note</strong> that full path coverage is impossible for graphs containing loops, because there are an infinite number of paths. A typical work around is to apply the <em>zero-to-many</em> rule, discussed in the <a class="reference internal" href="Input-Partitioning.html#domain-testing"><span class="std std-ref">Domain Testing</span></a> section, which states that the minimum number of times a loop can execute is zero, so this is a boundary condition. Similarly, some loops have an upper bound, so treat this as a boundary.</p>
 <p>A general guideline for loops is to select test inputs that execute the loop:</p>
 <ul class="simple">
 <li><p>zero times – so that we can test paths that do not execute the loop;</p></li>
