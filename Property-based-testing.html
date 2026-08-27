@@ -388,7 +388,7 @@ document.write(`
 <p>that determines if actual output from a program has failed or not.</p>
 </div>
 <p>Ideally an oracle should be automated (no human intervention at runtime) because then we can execute a larger volume of test cases and gain greater coverage of the program, <strong>but</strong> this is often non-trivial in practice.</p>
-<p>However, what we can do is to define <strong>properties</strong> that should hold in our program for specific inputs. For example, if we test a sorting algorithm, one property that should hold is that, for each element <span class="math notranslate nohighlight">\(i\)</span> in the list, the element at <span class="math notranslate nohighlight">\(i+1\)</span> should be greater than or equal to this: for all <span class="math notranslate nohighlight">\(i \in [0..length(list)-1], list[i] \leq list[i+1]\)</span>.</p>
+<p>However, what we can do is to define <strong>properties</strong> that should hold in our program for specific inputs. For example, if we test a sorting algorithm, one property that should hold is that, for each element <span class="math notranslate nohighlight">\(i\)</span> in the list, the element at <span class="math notranslate nohighlight">\(i+1\)</span> should be greater than or equal to this: for all <span class="math notranslate nohighlight">\(i \in [0..length(list)-2], list[i] \leq list[i+1]\)</span>.</p>
 </section>
 <section id="active-and-passive-test-oracles">
 <h2><span class="section-number">6.3. </span>Active and Passive Test Oracles<a class="headerlink" href="#active-and-passive-test-oracles" title="Permalink to this heading">#</a></h2>
