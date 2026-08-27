@@ -378,7 +378,7 @@ testing.</p></li>
 <section id="integrating-the-system">
 <h2><span class="section-number">7.3. </span>Integrating the System<a class="headerlink" href="#integrating-the-system" title="Permalink to this heading">#</a></h2>
 <p>In the process of designing a system, you will have decomposed your system into modules, packages or classes. If the system is complicated then you may have decomposed each module into sub-modules and so on.</p>
-<p><em>Integrating</em> your system refers to putting the modules, packages or classes together to create subsystems, and eventually the system itself. Generally speaking, integration and testing go together. Good integration strategies can give help you to minimise testing effort required. Poor integration strategies generally cause more work, and lead to lower quality software.</p>
+<p><em>Integrating</em> your system refers to putting the modules, packages or classes together to create subsystems, and eventually the system itself. Generally speaking, integration and testing go together. Good integration strategies can help you minimise testing effort. Poor integration strategies generally cause more work, and lead to lower quality software.</p>
 <p>Normally, a system integration is organised into a series of <em>builds</em>. Each build combines and tests one subset of the modules, packages or objects of the system.</p>
 <p>The aim for most integration strategies is to divide the modules into subsets based on their <em>dependencies</em>. Typical build strategies then try and integrate all those modules with no dependencies first, the modules that depend on these second, and so on. Here are some examples of integration strategies.</p>
 <section id="the-big-bang-integration-strategy">
