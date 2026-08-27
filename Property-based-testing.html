@@ -415,7 +415,7 @@ document.write(`
 <section id="metamorphic-oracles">
 <span id="sec-property-based-test-oracles-metamorphic-oracles"></span><h3><span class="section-number">6.4.3. </span>Metamorphic oracles<a class="headerlink" href="#metamorphic-oracles" title="Permalink to this heading">#</a></h3>
 <p>In some cases, we can use certain <em>metamorphic</em> properties between tests to check each other. By ‘metamorphic’, we mean that, given two different inputs that are related by some property <span class="math notranslate nohighlight">\(p\)</span>, if we run them both through our program, their outputs will be related by some other property <span class="math notranslate nohighlight">\(q\)</span>. The metamorphic relation is the relationship between <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(q\)</span>.</p>
-<p>For example, if we want to test a function that sorts a list of numbers, then we can make use of the fact that, given a list, any permutation of that list will result in the same output of the sort function (assuming a non-stable sort).</p>
+<p>For example, if we want to test a function that sorts a list of numbers, then we can make use of the fact that, given a list, any permutation of that list will result in the same output of the sort function.</p>
 <p>To do metamorphic testing, we generate an input for a program, execute this input, and then generate another input whose output will be related to the first.</p>
 <p>Formally, metamorphic testing follows the following pattern to test a function <span class="math notranslate nohighlight">\(f\)</span>:</p>
 <ol class="arabic simple">
